@@ -26,7 +26,6 @@
 	-->
     <context:component-scan base-package="ch.noisette.doodle.web.rest" />
 	<context:component-scan base-package="ch.noisette.doodle.services" />
-	<context:component-scan base-package="ch.noisette.doodle.services.impl" />
 
 	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
 
