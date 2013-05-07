@@ -15,7 +15,7 @@
         <context.path>doodle-rest</context.path>
         
         <spring.version>3.1.4.RELEASE</spring.version>
-        <java.version>1.6</java.version>
+        <java.version>1.7</java.version>
         <jackson.mapper.version>1.9.12</jackson.mapper.version>
         <maven.javadoc.reporting.version>2.7</maven.javadoc.reporting.version>
         <commons.logging.version>1.1.2</commons.logging.version>
