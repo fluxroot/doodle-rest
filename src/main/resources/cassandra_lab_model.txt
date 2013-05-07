@@ -1,0 +1,20 @@
+CREATE KEYSPACE doodle WITH placement_strategy='org.apache.cassandra.locator.SimpleStrategy' AND strategy_options=[{replication_factor:1}];
+
+use doodle;
+
+create column family poll
+with comparator = UTF8Type
+and default_validation_class = UTF8Type
+and column_metadata = [
+	{column_name: label, validation_class: UTF8Type}
+	{column_name: choices, validation_class: UTF8Type}
+	{column_name: email, validation_class: UTF8Type}
+];
+
+create column family subscriber
+with comparator = UTF8Type
+and default_validation_class = UTF8Type
+and column_metadata = [
+	{column_name: label, validation_class: UTF8Type}
+	{column_name: choices, validation_class: UTF8Type}
+	{column_name: pollId, validation_class: UTF8Type}];
